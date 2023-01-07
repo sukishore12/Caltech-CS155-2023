@@ -48,7 +48,7 @@ def plot_dataset(X, Y, show=True):
     # Create a new figure and get its axes.
     plt.close('all')
     fig = plt.figure()
-    ax = fig.gca()
+    ax = fig.add_subplot()
 
     # Plot X and Y with the 'bwr' colormap centered at zero.
     plt.set_cmap('bwr')
@@ -85,7 +85,7 @@ def plot_loss_function(X_grid, Y_grid, loss_grid):
     # Create a new figure and get its axes.
     plt.close('all')
     fig = plt.figure()
-    ax = fig.gca(projection='3d')
+    ax = fig.add_subplot(projection='3d')
 
     # Plot the loss function in 3D.
     surf = ax.plot_surface(X_grid, Y_grid, loss_grid, color='yellow', zorder=0)
