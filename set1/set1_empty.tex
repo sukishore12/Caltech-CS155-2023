@@ -227,7 +227,7 @@ Stochastic gradient descent (SGD) is an important optimization method in machine
     To verify the convergence of our gradient descent algorithm, consider the task of minimizing a function $f$ (assume that $f$ is continuously differentiable). Using Taylor's theorem, show that if $x'$ is a local minimum of $f$, then $\nabla f(x') = 0$. 
 \end{problem}
 \begin{hint}
-  First-order Taylor expansion gives that for some $x, h \in \mathbb{R}^n$, there exists $c \in (0, 1)$ such that $f(x + h) = f(x) + \nabla f(x + c\cdot h)^T h$.
+  First-order Taylor expansion gives that for any $x, h \in \mathbb{R}^n$, there exists $c \in (0, 1)$ such that $f(x + h) = f(x) + \nabla f(x + c\cdot h)^T h$.
   
 \end{hint}
 \begin{solution}
