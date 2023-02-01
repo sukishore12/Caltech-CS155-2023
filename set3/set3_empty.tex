@@ -1,6 +1,9 @@
 \newif\ifshowsolutions
 \showsolutionstrue
-\input{./preamble}
+
+% SWITCH IF USING OVERLEAF
+%\input{./preamble}
+\input{../preamble}
 
 
 
@@ -15,7 +18,7 @@
       Machine Learning \& Data Mining \hfill
       Caltech CS/CNS/EE 155 \hfill \\[1pt]
       Set 3\hfill
-      January $28^\text{th}$, 2023 \\
+      January $31^\text{th}$, 2023 \\
     }
   }
 }
@@ -31,7 +34,7 @@
 
 \section*{Policies}
 \begin{itemize}
-	\item Due 9 PM PST, January $28^\text{th}$ on Gradescope. 
+	\item Due 9 PM PST, January $31^\text{th}$ on Gradescope. 
 	\item You are free to collaborate on all of the problems, subject to the collaboration policy stated in the syllabus.
 	\item In this course, we will be using Google Colab for code submissions. You will need a Google account.
 \end{itemize}
@@ -212,7 +215,7 @@ bound on the loss term at each iteration.
 
 \problem[3]
 Let $h_t: \mathbb{R}^m \rightarrow \{-1,1\}$ be the weak classifier obtained at step $t$, and let $\alpha_t$ be
-its weight. Recall that the final classifier is $$H(x) = \text{sign}(f(x)) = \text{sign} \left(\sum\limits_{i=1}^T \alpha_{t}h_t(x) \right).$$
+its weight. Recall that the final classifier is $$H(x) = \text{sign}(f(x)) = \text{sign} \left(\sum\limits_{t=1}^T \alpha_{t}h_t(x) \right).$$
 
 Suppose $\{(x_1, y_1), ..., (x_N, y_N)\} \subset \mathbb{R}^m \times \{-1,1\}$ is our training dataset.  Show that the training set error of the final classifier can be bounded from
 above if an an exponential loss function is used:
