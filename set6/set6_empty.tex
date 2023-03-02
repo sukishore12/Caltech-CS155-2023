@@ -1,6 +1,6 @@
 \newif\ifshowsolutions
 \showsolutionstrue
-\input{preamble}
+\input{./preamble}
 
 
 
@@ -125,9 +125,7 @@ In this problem, we will explore some of the various algorithms associated with 
 
 These next few problems will require extensive coding, so be sure to start early! We provide you with eight different files:
 \begin{itemize}
-  \item You will write all your code in \texttt{HMM.py}, within the appropriate functions where indicated. There should be no need to write additional functions or use NumPy in your implementation, but feel free to do so if you would like.
-  \item You can (and should!) use the helper files \texttt{2A.py}, \texttt{2Bi.py}, \texttt{2Bii.py}, \texttt{2C.py}, \texttt{2D.py}, and \texttt{2F.py}. These are scripts that can be used to run and check your implementations for each of the corresponding problems. The scripts provide useful output in an easy-to-read format. There is no need to modify these files.
-  \item Lastly, \texttt{Utility.py} contains some functions used for loading data. There is no need to modify this file. \\
+  \item You will write all your code in \texttt{HMM.ipynb}, within the appropriate functions where indicated by "TODO" in the comments. There is no need to modify anything else aside from what is indicated. There should be no need to write additional functions or use NumPy in your implementation, but feel free to do so if you would like. 
 \end{itemize}
 
 The supplementary data folder contains 6 files titled \texttt{sequence_data0.txt}, \texttt{sequence_data1.txt}, ... , \texttt{sequence_data5.txt}. Each file specifies a \textbf{trained} HMM. The first row contains two tab-delimited numbers: the number of states $Y$ and the number of types of observations $X$ (i.e. the observations are $0, 1, . . . , X - 1$). The next $Y$ rows of $Y$ tab-delimited floating-point numbers describe the state transition matrix. Each row represents the current state, each column represents a state to transition to, and each entry represents the probability of that transition occurring. The next $Y$ rows of $X$ tab-delimited floating-point numbers describe the output emission matrix, encoded analogously to the state transition matrix. The file ends with 5 possible emissions from that HMM. \\
@@ -136,7 +134,7 @@ The supplementary data folder also contains one additional file titled \texttt{r
 \indent\problem[10] % indent for consistency
 For each of the six trained HMMs, find the max-probability state sequence for each of the five input sequences at the end of the corresponding file. To complete this problem, you will have to implement the Viterbi algorithm. Write your implementation well, as we will be reusing it in a later problem. See the end of problem 2B for a big hint!
 
-Show your results on the 6 files. (Copy-pasting the results of \texttt{2A.py} suffices.)
+Show your results on the 6 files. (Copy-pasting the results of under the "Part A" heading of \texttt{HMM.ipynb} suffices.)
 \begin{solution}
 \end{solution}
 \indent\problem[17] % indent for consistency
